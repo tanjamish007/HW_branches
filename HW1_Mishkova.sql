@@ -29,123 +29,123 @@ select id, name, email, created_on from students;
 -- 8. ¬ывести пользователей где password 12333
 
 select name, password from students
-where password = '12333'
+where password = '12333';
 
 -- 9. ¬ывести пользователей которые были созданы 2021-03-26 00:00:00
 
 select name, created_on from students
-where created_on = '2021-03-26 00:00:00'
+where created_on = '2021-03-26 00:00:00';
 
 -- 10. ¬ывести пользователей где в имени есть слово јнна
 
 select name from students
-where name like 'Anna%'
+where name like 'Anna%';
 
 -- 11. ¬ывести пользователей где в имени в конце есть 8
 
 select name from students
-where name like '%8'
+where name like '%8';
 
 -- 12. ¬ывести пользователей где в имени в есть буква а
 
 select name from students
-where name like '%a%'
+where name like '%a%';
 
 -- 13. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00
 
 select name, created_on from students
-where created_on = '2021-07-12 00:00:00'
+where created_on = '2021-07-12 00:00:00';
 
 -- 14. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и имеют пароль 1m313
 
 select name, created_on, password from students
-where created_on = '2021-07-12 00:00:00' and password = '1m313'
+where created_on = '2021-07-12 00:00:00' and password = '1m313';
 
 -- 15. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть слово Andrey
 
 select name, created_on from students 
-where created_on = '2021-07-12 00:00:00' and name like '%Andrey%'
+where created_on = '2021-07-12 00:00:00' and name like '%Andrey%';
 
 -- 16. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8
 
 select name, created_on from students
-where created_on = '2021-07-12 00:00:00' and name like '%8%'
+where created_on = '2021-07-12 00:00:00' and name like '%8%';
 
 -- 17. ¬ывести пользовател€ у которых id равен 112
 
 select * from students 
-where id = '112'
+where id = '112';
 
 -- 18. ¬ывести пользовател€ у которых id равен 153
 
 select * from students 
-where id = '153'
+where id = '153';
 
 -- 19. ¬ывести пользовател€ у которых id больше 140
 
 select * from students 
-where id > '140'
+where id > '140';
 
 -- 20. ¬ывести пользовател€ у которых id меньше 130
 
 select * from students 
-where id < '130'
+where id < '130';
 
 -- 21. ¬ывести пользовател€ у которых id меньше 127 или больше 188
 
 select * from students 
-where id <'127' or id >'188'
+where id <'127' or id >'188';
 
 -- 22. ¬ывести пользовател€ у которых id меньше либо равно 137
 
 select * from students
-where id <= '137'
+where id <= '137';
 
 -- 23. ¬ывести пользовател€ у которых id больше либо равно 137
 
 select * from students
-where id >= '137'
+where id >= '137';
 
 -- 24. ¬ывести пользовател€ у которых id больше 180 но меньше 190
 
 select * from students
-where id >'180' and id <'190'
+where id >'180' and id <'190';
 
 -- 25. ¬ывести пользовател€ у которых id между 180 и 190
 
 select * from students
-where id between '181' and '189'
+where id between '181' and '189';
 
 -- 26. ¬ывести пользователей где password равен 12333, 1m313, 123313
 
 select * from students
-where password in ('12333', '1m313', '123313')
+where password in ('12333', '1m313', '123313');
 
 -- 27. ¬ывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00
 
 select * from students
-where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00')
+where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00');
 
 -- 28. ¬ывести минимальный id
 
-select min (id) from students
+select min (id) from students;
 
 -- 29. ¬ывести максимальный.
 
-select max (id) from students
+select max (id) from students;
 
 -- 30. ¬ывести количество пользователей
 
-select count(id) from students 
+select count(id) from students;
 
 -- 31. ¬ывести id пользовател€, им€, дату создани€ пользовател€. ќтсортировать по пор€дку возрастани€ даты добавлени€ пользоватлел€.
 
 select id, name, created_on from students
-order by created_on 
+order by created_on;
 
  -- 32. ¬ывести id пользовател€, им€, дату создани€ пользовател€. ќтсортировать по пор€дку убывани€ даты добавлени€ пользоватлел€.
 
 select id, name, created_on from students
-order by created_on desc
+order by created_on desc;
 
 
